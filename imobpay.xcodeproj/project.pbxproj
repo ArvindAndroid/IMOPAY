@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04CE1ED89F82007B46E6 /* ParseApi.m */; };
+		84FE04D41ED8A012007B46E6 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D31ED8A012007B46E6 /* Login.m */; };
+		84FE04D71ED8A021007B46E6 /* Signup.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D61ED8A021007B46E6 /* Signup.m */; };
+		84FE04DD1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D91ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m */; };
+		84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04DC1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		A186DA423AEA457D7D26FD4A /* libPods-imobpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53BFF8A50AD77BA5185D22 /* libPods-imobpay.a */; };
+		C90897EA1ED8987B0080C25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90897E91ED8987B0080C25F /* main.m */; };
+		C90897ED1ED8987B0080C25F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90897EC1ED8987B0080C25F /* AppDelegate.m */; };
+		C90897F01ED8987B0080C25F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90897EF1ED8987B0080C25F /* ViewController.m */; };
+		C90897F31ED8987C0080C25F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90897F11ED8987C0080C25F /* Main.storyboard */; };
+		C90897F51ED8987C0080C25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90897F41ED8987C0080C25F /* Assets.xcassets */; };
+		C90897F81ED8987C0080C25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90897F61ED8987C0080C25F /* LaunchScreen.storyboard */; };
+		C90898031ED8987C0080C25F /* imobpayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90898021ED8987C0080C25F /* imobpayTests.m */; };
+		C908980E1ED8987C0080C25F /* imobpayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C908980D1ED8987C0080C25F /* imobpayUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90897FF1ED8987C0080C25F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90897DD1ED8987B0080C25F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90897E41ED8987B0080C25F;
+			remoteInfo = imobpay;
+		};
+		C908980A1ED8987C0080C25F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90897DD1ED8987B0080C25F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90897E41ED8987B0080C25F;
+			remoteInfo = imobpay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25EC697DC0A125B1008B6385 /* Pods-imobpay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imobpay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imobpay/Pods-imobpay.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8D3F01A906C0CC5972102A /* Pods-imobpay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imobpay.release.xcconfig"; path = "Pods/Target Support Files/Pods-imobpay/Pods-imobpay.release.xcconfig"; sourceTree = "<group>"; };
+		84FE04CD1ED89F82007B46E6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		84FE04CE1ED89F82007B46E6 /* ParseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseApi.m; sourceTree = "<group>"; };
+		84FE04CF1ED89F82007B46E6 /* ParseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseApi.h; sourceTree = "<group>"; };
+		84FE04D21ED8A012007B46E6 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		84FE04D31ED8A012007B46E6 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		84FE04D51ED8A021007B46E6 /* Signup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signup.h; sourceTree = "<group>"; };
+		84FE04D61ED8A021007B46E6 /* Signup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signup.m; sourceTree = "<group>"; };
+		84FE04D91ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		84FE04DA1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		84FE04DB1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		84FE04DC1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		C90897E51ED8987B0080C25F /* imobpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imobpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90897E91ED8987B0080C25F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C90897EB1ED8987B0080C25F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C90897EC1ED8987B0080C25F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C90897EE1ED8987B0080C25F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C90897EF1ED8987B0080C25F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C90897F21ED8987C0080C25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C90897F41ED8987C0080C25F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C90897F71ED8987C0080C25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C90897F91ED8987C0080C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90897FE1ED8987C0080C25F /* imobpayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imobpayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90898021ED8987C0080C25F /* imobpayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imobpayTests.m; sourceTree = "<group>"; };
+		C90898041ED8987C0080C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90898091ED8987C0080C25F /* imobpayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imobpayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C908980D1ED8987C0080C25F /* imobpayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imobpayUITests.m; sourceTree = "<group>"; };
+		C908980F1ED8987C0080C25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC53BFF8A50AD77BA5185D22 /* libPods-imobpay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-imobpay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90897E21ED8987B0080C25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A186DA423AEA457D7D26FD4A /* libPods-imobpay.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90897FB1ED8987C0080C25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90898061ED8987C0080C25F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7496BA6DE9D3545190372AAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC53BFF8A50AD77BA5185D22 /* libPods-imobpay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84FE04CC1ED89F40007B46E6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84FE04CD1ED89F82007B46E6 /* Constants.h */,
+				84FE04CE1ED89F82007B46E6 /* ParseApi.m */,
+				84FE04CF1ED89F82007B46E6 /* ParseApi.h */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		84FE04D11ED89FF1007B46E6 /* LoginSignup */ = {
+			isa = PBXGroup;
+			children = (
+				84FE04D21ED8A012007B46E6 /* Login.h */,
+				84FE04D31ED8A012007B46E6 /* Login.m */,
+				84FE04D51ED8A021007B46E6 /* Signup.h */,
+				84FE04D61ED8A021007B46E6 /* Signup.m */,
+			);
+			name = LoginSignup;
+			sourceTree = "<group>";
+		};
+		84FE04D81ED8AAA7007B46E6 /* TPKEYBOARD */ = {
+			isa = PBXGroup;
+			children = (
+				84FE04D91ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m */,
+				84FE04DA1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.h */,
+				84FE04DB1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				84FE04DC1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKEYBOARD;
+			sourceTree = "<group>";
+		};
+		C8496447807A276207607EF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25EC697DC0A125B1008B6385 /* Pods-imobpay.debug.xcconfig */,
+				5C8D3F01A906C0CC5972102A /* Pods-imobpay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C90897DC1ED8987B0080C25F = {
+			isa = PBXGroup;
+			children = (
+				C90897E71ED8987B0080C25F /* imobpay */,
+				C90898011ED8987C0080C25F /* imobpayTests */,
+				C908980C1ED8987C0080C25F /* imobpayUITests */,
+				C90897E61ED8987B0080C25F /* Products */,
+				C8496447807A276207607EF0 /* Pods */,
+				7496BA6DE9D3545190372AAF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C90897E61ED8987B0080C25F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90897E51ED8987B0080C25F /* imobpay.app */,
+				C90897FE1ED8987C0080C25F /* imobpayTests.xctest */,
+				C90898091ED8987C0080C25F /* imobpayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90897E71ED8987B0080C25F /* imobpay */ = {
+			isa = PBXGroup;
+			children = (
+				84FE04D81ED8AAA7007B46E6 /* TPKEYBOARD */,
+				84FE04D11ED89FF1007B46E6 /* LoginSignup */,
+				84FE04CC1ED89F40007B46E6 /* Networking */,
+				C90897EB1ED8987B0080C25F /* AppDelegate.h */,
+				C90897EC1ED8987B0080C25F /* AppDelegate.m */,
+				C90897EE1ED8987B0080C25F /* ViewController.h */,
+				C90897EF1ED8987B0080C25F /* ViewController.m */,
+				C90897F11ED8987C0080C25F /* Main.storyboard */,
+				C90897F41ED8987C0080C25F /* Assets.xcassets */,
+				C90897F61ED8987C0080C25F /* LaunchScreen.storyboard */,
+				C90897F91ED8987C0080C25F /* Info.plist */,
+				C90897E81ED8987B0080C25F /* Supporting Files */,
+			);
+			path = imobpay;
+			sourceTree = "<group>";
+		};
+		C90897E81ED8987B0080C25F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90897E91ED8987B0080C25F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90898011ED8987C0080C25F /* imobpayTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90898021ED8987C0080C25F /* imobpayTests.m */,
+				C90898041ED8987C0080C25F /* Info.plist */,
+			);
+			path = imobpayTests;
+			sourceTree = "<group>";
+		};
+		C908980C1ED8987C0080C25F /* imobpayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C908980D1ED8987C0080C25F /* imobpayUITests.m */,
+				C908980F1ED8987C0080C25F /* Info.plist */,
+			);
+			path = imobpayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90897E41ED8987B0080C25F /* imobpay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90898121ED8987C0080C25F /* Build configuration list for PBXNativeTarget "imobpay" */;
+			buildPhases = (
+				FF39739A19810B25D5C56B87 /* [CP] Check Pods Manifest.lock */,
+				C90897E11ED8987B0080C25F /* Sources */,
+				C90897E21ED8987B0080C25F /* Frameworks */,
+				C90897E31ED8987B0080C25F /* Resources */,
+				489EA95B914C9397D3D401D9 /* [CP] Embed Pods Frameworks */,
+				788A7848BF4C899011180B42 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imobpay;
+			productName = imobpay;
+			productReference = C90897E51ED8987B0080C25F /* imobpay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90897FD1ED8987C0080C25F /* imobpayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90898151ED8987C0080C25F /* Build configuration list for PBXNativeTarget "imobpayTests" */;
+			buildPhases = (
+				C90897FA1ED8987C0080C25F /* Sources */,
+				C90897FB1ED8987C0080C25F /* Frameworks */,
+				C90897FC1ED8987C0080C25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90898001ED8987C0080C25F /* PBXTargetDependency */,
+			);
+			name = imobpayTests;
+			productName = imobpayTests;
+			productReference = C90897FE1ED8987C0080C25F /* imobpayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C90898081ED8987C0080C25F /* imobpayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90898181ED8987C0080C25F /* Build configuration list for PBXNativeTarget "imobpayUITests" */;
+			buildPhases = (
+				C90898051ED8987C0080C25F /* Sources */,
+				C90898061ED8987C0080C25F /* Frameworks */,
+				C90898071ED8987C0080C25F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C908980B1ED8987C0080C25F /* PBXTargetDependency */,
+			);
+			name = imobpayUITests;
+			productName = imobpayUITests;
+			productReference = C90898091ED8987C0080C25F /* imobpayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90897DD1ED8987B0080C25F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Vishal;
+				TargetAttributes = {
+					C90897E41ED8987B0080C25F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					C90897FD1ED8987C0080C25F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C90897E41ED8987B0080C25F;
+					};
+					C90898081ED8987C0080C25F = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C90897E41ED8987B0080C25F;
+					};
+				};
+			};
+			buildConfigurationList = C90897E01ED8987B0080C25F /* Build configuration list for PBXProject "imobpay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C90897DC1ED8987B0080C25F;
+			productRefGroup = C90897E61ED8987B0080C25F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90897E41ED8987B0080C25F /* imobpay */,
+				C90897FD1ED8987C0080C25F /* imobpayTests */,
+				C90898081ED8987C0080C25F /* imobpayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90897E31ED8987B0080C25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90897F81ED8987C0080C25F /* LaunchScreen.storyboard in Resources */,
+				C90897F51ED8987C0080C25F /* Assets.xcassets in Resources */,
+				C90897F31ED8987C0080C25F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90897FC1ED8987C0080C25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90898071ED8987C0080C25F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		489EA95B914C9397D3D401D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imobpay/Pods-imobpay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		788A7848BF4C899011180B42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-imobpay/Pods-imobpay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF39739A19810B25D5C56B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90897E11ED8987B0080C25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE04DD1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				84FE04D41ED8A012007B46E6 /* Login.m in Sources */,
+				84FE04D71ED8A021007B46E6 /* Signup.m in Sources */,
+				C90897F01ED8987B0080C25F /* ViewController.m in Sources */,
+				C90897ED1ED8987B0080C25F /* AppDelegate.m in Sources */,
+				84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */,
+				C90897EA1ED8987B0080C25F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90897FA1ED8987C0080C25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90898031ED8987C0080C25F /* imobpayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90898051ED8987C0080C25F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C908980E1ED8987C0080C25F /* imobpayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90898001ED8987C0080C25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90897E41ED8987B0080C25F /* imobpay */;
+			targetProxy = C90897FF1ED8987C0080C25F /* PBXContainerItemProxy */;
+		};
+		C908980B1ED8987C0080C25F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90897E41ED8987B0080C25F /* imobpay */;
+			targetProxy = C908980A1ED8987C0080C25F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90897F11ED8987C0080C25F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90897F21ED8987C0080C25F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C90897F61ED8987C0080C25F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90897F71ED8987C0080C25F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90898101ED8987C0080C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C90898111ED8987C0080C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90898131ED8987C0080C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EC697DC0A125B1008B6385 /* Pods-imobpay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = imobpay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomforrent.imobpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C90898141ED8987C0080C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8D3F01A906C0CC5972102A /* Pods-imobpay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = imobpay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomforrent.imobpay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C90898161ED8987C0080C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = imobpayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomforrent.imobpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imobpay.app/imobpay";
+			};
+			name = Debug;
+		};
+		C90898171ED8987C0080C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = imobpayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomforrent.imobpayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imobpay.app/imobpay";
+			};
+			name = Release;
+		};
+		C90898191ED8987C0080C25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = imobpayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomforrent.imobpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = imobpay;
+			};
+			name = Debug;
+		};
+		C908981A1ED8987C0080C25F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = imobpayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roomforrent.imobpayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = imobpay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90897E01ED8987B0080C25F /* Build configuration list for PBXProject "imobpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90898101ED8987C0080C25F /* Debug */,
+				C90898111ED8987C0080C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90898121ED8987C0080C25F /* Build configuration list for PBXNativeTarget "imobpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90898131ED8987C0080C25F /* Debug */,
+				C90898141ED8987C0080C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90898151ED8987C0080C25F /* Build configuration list for PBXNativeTarget "imobpayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90898161ED8987C0080C25F /* Debug */,
+				C90898171ED8987C0080C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90898181ED8987C0080C25F /* Build configuration list for PBXNativeTarget "imobpayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90898191ED8987C0080C25F /* Debug */,
+				C908981A1ED8987C0080C25F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90897DD1ED8987B0080C25F /* Project object */;
+}
