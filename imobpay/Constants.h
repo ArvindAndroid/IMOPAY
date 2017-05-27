@@ -12,4 +12,6 @@
 
 #define RegisterUrl         @"https://imobpay.eu/webs/register"
 #define LoginUrl            @"https://imobpay.eu/webs/login"
+#define OrderSim            @"https://imobpay.eu/webs/ordersim"
+#define ForgotPassword      @"https://imobpay.eu/webs/forgotpassword"
 #endif /* Constants_h */

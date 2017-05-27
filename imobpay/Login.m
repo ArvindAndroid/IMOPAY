@@ -68,7 +68,7 @@
     BOOL status = [[responseobject objectForKey:@"status"] boolValue];
     ParseApi *obj = [[ParseApi alloc]init];
     if (status) {
-        [obj showalert:@"“You have successfully logged in." currentcontroller:self];
+        [obj showalert:@"You have successfully logged in." currentcontroller:self];
     }else
     {
         [obj showalert:[responseobject objectForKey:@"msg"] currentcontroller:self];
