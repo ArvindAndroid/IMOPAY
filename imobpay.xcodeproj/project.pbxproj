@@ -13,6 +13,8 @@
 		84FE04DD1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D91ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m */; };
 		84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04DC1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		A186DA423AEA457D7D26FD4A /* libPods-imobpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53BFF8A50AD77BA5185D22 /* libPods-imobpay.a */; };
+		A45A23451ED9B4A30074E6C5 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45A23441ED9B4A30074E6C5 /* ForgotPasswordViewController.m */; };
+		A45A23491ED9C24F0074E6C5 /* SimOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45A23481ED9C24F0074E6C5 /* SimOrderViewController.m */; };
 		C90897EA1ED8987B0080C25F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90897E91ED8987B0080C25F /* main.m */; };
 		C90897ED1ED8987B0080C25F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90897EC1ED8987B0080C25F /* AppDelegate.m */; };
 		C90897F01ED8987B0080C25F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C90897EF1ED8987B0080C25F /* ViewController.m */; };
@@ -54,6 +56,10 @@
 		84FE04DA1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		84FE04DB1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
 		84FE04DC1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		A45A23431ED9B4A30074E6C5 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		A45A23441ED9B4A30074E6C5 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		A45A23471ED9C24F0074E6C5 /* SimOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimOrderViewController.h; sourceTree = "<group>"; };
+		A45A23481ED9C24F0074E6C5 /* SimOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimOrderViewController.m; sourceTree = "<group>"; };
 		C90897E51ED8987B0080C25F /* imobpay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imobpay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90897E91ED8987B0080C25F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C90897EB1ED8987B0080C25F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +145,24 @@
 			name = TPKEYBOARD;
 			sourceTree = "<group>";
 		};
+		A45A23421ED9B46F0074E6C5 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A45A23431ED9B4A30074E6C5 /* ForgotPasswordViewController.h */,
+				A45A23441ED9B4A30074E6C5 /* ForgotPasswordViewController.m */,
+			);
+			name = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		A45A23461ED9C2260074E6C5 /* SimOrder */ = {
+			isa = PBXGroup;
+			children = (
+				A45A23471ED9C24F0074E6C5 /* SimOrderViewController.h */,
+				A45A23481ED9C24F0074E6C5 /* SimOrderViewController.m */,
+			);
+			name = SimOrder;
+			sourceTree = "<group>";
+		};
 		C8496447807A276207607EF0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +197,8 @@
 		C90897E71ED8987B0080C25F /* imobpay */ = {
 			isa = PBXGroup;
 			children = (
+				A45A23461ED9C2260074E6C5 /* SimOrder */,
+				A45A23421ED9B46F0074E6C5 /* ForgotPassword */,
 				84FE04D81ED8AAA7007B46E6 /* TPKEYBOARD */,
 				84FE04D11ED89FF1007B46E6 /* LoginSignup */,
 				84FE04CC1ED89F40007B46E6 /* Networking */,
@@ -400,11 +426,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FE04DD1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				A45A23491ED9C24F0074E6C5 /* SimOrderViewController.m in Sources */,
 				84FE04D41ED8A012007B46E6 /* Login.m in Sources */,
 				84FE04D71ED8A021007B46E6 /* Signup.m in Sources */,
 				C90897F01ED8987B0080C25F /* ViewController.m in Sources */,
 				C90897ED1ED8987B0080C25F /* AppDelegate.m in Sources */,
 				84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				A45A23451ED9B4A30074E6C5 /* ForgotPasswordViewController.m in Sources */,
 				84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */,
 				C90897EA1ED8987B0080C25F /* main.m in Sources */,
 			);
