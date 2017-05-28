@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844AAF911EDAC5D500572B7F /* THPinInputCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF831EDAC5D500572B7F /* THPinInputCirclesView.m */; };
+		844AAF921EDAC5D500572B7F /* THPinInputCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF851EDAC5D500572B7F /* THPinInputCircleView.m */; };
+		844AAF931EDAC5D500572B7F /* THPinNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF871EDAC5D500572B7F /* THPinNumButton.m */; };
+		844AAF941EDAC5D500572B7F /* THPinNumPadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF891EDAC5D500572B7F /* THPinNumPadView.m */; };
+		844AAF951EDAC5D500572B7F /* THPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF8B1EDAC5D500572B7F /* THPinView.m */; };
+		844AAF961EDAC5D500572B7F /* THPinViewController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 844AAF8C1EDAC5D500572B7F /* THPinViewController.bundle */; };
+		844AAF971EDAC5D500572B7F /* THPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF8E1EDAC5D500572B7F /* THPinViewController.m */; };
+		844AAF9B1EDACBA700572B7F /* EnterPasscode.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF9A1EDACBA700572B7F /* EnterPasscode.m */; };
+		844AAF9D1EDACE0F00572B7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AAF9C1EDACE0F00572B7F /* CoreGraphics.framework */; };
+		844AAFA11EDAE5D000572B7F /* DashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAFA01EDAE5D000572B7F /* DashboardVC.m */; };
 		84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04CE1ED89F82007B46E6 /* ParseApi.m */; };
 		84FE04D41ED8A012007B46E6 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D31ED8A012007B46E6 /* Login.m */; };
 		84FE04D71ED8A021007B46E6 /* Signup.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D61ED8A021007B46E6 /* Signup.m */; };
@@ -45,6 +55,24 @@
 /* Begin PBXFileReference section */
 		25EC697DC0A125B1008B6385 /* Pods-imobpay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imobpay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imobpay/Pods-imobpay.debug.xcconfig"; sourceTree = "<group>"; };
 		5C8D3F01A906C0CC5972102A /* Pods-imobpay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imobpay.release.xcconfig"; path = "Pods/Target Support Files/Pods-imobpay/Pods-imobpay.release.xcconfig"; sourceTree = "<group>"; };
+		844AAF821EDAC5D500572B7F /* THPinInputCirclesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinInputCirclesView.h; sourceTree = "<group>"; };
+		844AAF831EDAC5D500572B7F /* THPinInputCirclesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinInputCirclesView.m; sourceTree = "<group>"; };
+		844AAF841EDAC5D500572B7F /* THPinInputCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinInputCircleView.h; sourceTree = "<group>"; };
+		844AAF851EDAC5D500572B7F /* THPinInputCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinInputCircleView.m; sourceTree = "<group>"; };
+		844AAF861EDAC5D500572B7F /* THPinNumButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinNumButton.h; sourceTree = "<group>"; };
+		844AAF871EDAC5D500572B7F /* THPinNumButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinNumButton.m; sourceTree = "<group>"; };
+		844AAF881EDAC5D500572B7F /* THPinNumPadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinNumPadView.h; sourceTree = "<group>"; };
+		844AAF891EDAC5D500572B7F /* THPinNumPadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinNumPadView.m; sourceTree = "<group>"; };
+		844AAF8A1EDAC5D500572B7F /* THPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinView.h; sourceTree = "<group>"; };
+		844AAF8B1EDAC5D500572B7F /* THPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinView.m; sourceTree = "<group>"; };
+		844AAF8C1EDAC5D500572B7F /* THPinViewController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = THPinViewController.bundle; sourceTree = "<group>"; };
+		844AAF8D1EDAC5D500572B7F /* THPinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinViewController.h; sourceTree = "<group>"; };
+		844AAF8E1EDAC5D500572B7F /* THPinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinViewController.m; sourceTree = "<group>"; };
+		844AAF991EDACBA700572B7F /* EnterPasscode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterPasscode.h; sourceTree = "<group>"; };
+		844AAF9A1EDACBA700572B7F /* EnterPasscode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterPasscode.m; sourceTree = "<group>"; };
+		844AAF9C1EDACE0F00572B7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		844AAF9F1EDAE5D000572B7F /* DashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardVC.h; sourceTree = "<group>"; };
+		844AAFA01EDAE5D000572B7F /* DashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardVC.m; sourceTree = "<group>"; };
 		84FE04CD1ED89F82007B46E6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		84FE04CE1ED89F82007B46E6 /* ParseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseApi.m; sourceTree = "<group>"; };
 		84FE04CF1ED89F82007B46E6 /* ParseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseApi.h; sourceTree = "<group>"; };
@@ -84,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844AAF9D1EDACE0F00572B7F /* CoreGraphics.framework in Frameworks */,
 				A186DA423AEA457D7D26FD4A /* libPods-imobpay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,9 +137,39 @@
 		7496BA6DE9D3545190372AAF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844AAF9C1EDACE0F00572B7F /* CoreGraphics.framework */,
 				DC53BFF8A50AD77BA5185D22 /* libPods-imobpay.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		844AAF811EDAC5C500572B7F /* Passcode */ = {
+			isa = PBXGroup;
+			children = (
+				844AAF821EDAC5D500572B7F /* THPinInputCirclesView.h */,
+				844AAF831EDAC5D500572B7F /* THPinInputCirclesView.m */,
+				844AAF841EDAC5D500572B7F /* THPinInputCircleView.h */,
+				844AAF851EDAC5D500572B7F /* THPinInputCircleView.m */,
+				844AAF861EDAC5D500572B7F /* THPinNumButton.h */,
+				844AAF871EDAC5D500572B7F /* THPinNumButton.m */,
+				844AAF881EDAC5D500572B7F /* THPinNumPadView.h */,
+				844AAF891EDAC5D500572B7F /* THPinNumPadView.m */,
+				844AAF8A1EDAC5D500572B7F /* THPinView.h */,
+				844AAF8B1EDAC5D500572B7F /* THPinView.m */,
+				844AAF8C1EDAC5D500572B7F /* THPinViewController.bundle */,
+				844AAF8D1EDAC5D500572B7F /* THPinViewController.h */,
+				844AAF8E1EDAC5D500572B7F /* THPinViewController.m */,
+			);
+			name = Passcode;
+			sourceTree = "<group>";
+		};
+		844AAF9E1EDAE5B900572B7F /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				844AAF9F1EDAE5D000572B7F /* DashboardVC.h */,
+				844AAFA01EDAE5D000572B7F /* DashboardVC.m */,
+			);
+			name = Dashboard;
 			sourceTree = "<group>";
 		};
 		84FE04CC1ED89F40007B46E6 /* Networking */ = {
@@ -130,6 +189,8 @@
 				84FE04D31ED8A012007B46E6 /* Login.m */,
 				84FE04D51ED8A021007B46E6 /* Signup.h */,
 				84FE04D61ED8A021007B46E6 /* Signup.m */,
+				844AAF991EDACBA700572B7F /* EnterPasscode.h */,
+				844AAF9A1EDACBA700572B7F /* EnterPasscode.m */,
 			);
 			name = LoginSignup;
 			sourceTree = "<group>";
@@ -197,6 +258,8 @@
 		C90897E71ED8987B0080C25F /* imobpay */ = {
 			isa = PBXGroup;
 			children = (
+				844AAF9E1EDAE5B900572B7F /* Dashboard */,
+				844AAF811EDAC5C500572B7F /* Passcode */,
 				A45A23461ED9C2260074E6C5 /* SimOrder */,
 				A45A23421ED9B46F0074E6C5 /* ForgotPassword */,
 				84FE04D81ED8AAA7007B46E6 /* TPKEYBOARD */,
@@ -350,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844AAF961EDAC5D500572B7F /* THPinViewController.bundle in Resources */,
 				C90897F81ED8987C0080C25F /* LaunchScreen.storyboard in Resources */,
 				C90897F51ED8987C0080C25F /* Assets.xcassets in Resources */,
 				C90897F31ED8987C0080C25F /* Main.storyboard in Resources */,
@@ -426,13 +490,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FE04DD1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				844AAF921EDAC5D500572B7F /* THPinInputCircleView.m in Sources */,
+				844AAF971EDAC5D500572B7F /* THPinViewController.m in Sources */,
 				A45A23491ED9C24F0074E6C5 /* SimOrderViewController.m in Sources */,
 				84FE04D41ED8A012007B46E6 /* Login.m in Sources */,
+				844AAFA11EDAE5D000572B7F /* DashboardVC.m in Sources */,
 				84FE04D71ED8A021007B46E6 /* Signup.m in Sources */,
+				844AAF911EDAC5D500572B7F /* THPinInputCirclesView.m in Sources */,
 				C90897F01ED8987B0080C25F /* ViewController.m in Sources */,
+				844AAF941EDAC5D500572B7F /* THPinNumPadView.m in Sources */,
 				C90897ED1ED8987B0080C25F /* AppDelegate.m in Sources */,
+				844AAF9B1EDACBA700572B7F /* EnterPasscode.m in Sources */,
 				84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				A45A23451ED9B4A30074E6C5 /* ForgotPasswordViewController.m in Sources */,
+				844AAF951EDAC5D500572B7F /* THPinView.m in Sources */,
+				844AAF931EDAC5D500572B7F /* THPinNumButton.m in Sources */,
 				84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */,
 				C90897EA1ED8987B0080C25F /* main.m in Sources */,
 			);

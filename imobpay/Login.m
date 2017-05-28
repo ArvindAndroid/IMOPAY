@@ -9,14 +9,19 @@
 #import "Login.h"
 #import "Constants.h"
 #import "ParseApi.h"
-
-@interface Login ()<UserMgrDelegate, UITextFieldDelegate>
+#import "THPinViewController.h"
+@interface Login ()<UserMgrDelegate, UITextFieldDelegate, THPinViewControllerDelegate>
 @property(nonatomic,weak)IBOutlet UITextField *userField;
 @property(nonatomic,weak)IBOutlet UITextField *pwdField;
+@property (nonatomic, strong) UIImageView *secretContentView;
+@property (nonatomic, strong) UIButton *loginLogoutButton;
+@property (nonatomic, copy) NSString *correctPin;
+@property (nonatomic, assign) NSUInteger remainingPinEntries;
+@property (nonatomic, assign) BOOL locked;
 @end
 
 @implementation Login
-
+static const NSUInteger THNumberOfPinEntries = 6;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -68,12 +73,59 @@
     BOOL status = [[responseobject objectForKey:@"status"] boolValue];
     ParseApi *obj = [[ParseApi alloc]init];
     if (status) {
-        [obj showalert:@"You have successfully logged in." currentcontroller:self];
+       // [obj showalert:@"You have successfully logged in." currentcontroller:self];
+        [self performSegueWithIdentifier:@"showpasscode" sender:nil];
     }else
     {
         [obj showalert:[responseobject objectForKey:@"msg"] currentcontroller:self];
     }
     NSLog(@"response..%@",responseobject);
+}
+
+- (BOOL)userCanRetryInPinViewController:(THPinViewController *)pinViewController
+{
+    return (self.remainingPinEntries > 0);
+}
+
+- (void)incorrectPinEnteredInPinViewController:(THPinViewController *)pinViewController
+{
+    if (self.remainingPinEntries > THNumberOfPinEntries / 2) {
+        return;
+    }
+    
+    UIAlertView *alert =
+    [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Incorrect PIN", @"")
+                               message:(self.remainingPinEntries == 1 ?
+                                        @"You can try again once." :
+                                        [NSString stringWithFormat:@"You can try again %lu times.",
+                                         (unsigned long)self.remainingPinEntries])
+                              delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+    
+}
+
+- (void)pinViewControllerWillDismissAfterPinEntryWasSuccessful:(THPinViewController *)pinViewController
+{
+    self.locked = NO;
+    [self.loginLogoutButton setTitle:NSLocalizedString(@"Logout", @"") forState:UIControlStateNormal];
+}
+
+- (void)pinViewControllerWillDismissAfterPinEntryWasUnsuccessful:(THPinViewController *)pinViewController
+{
+    self.locked = YES;
+    [self.loginLogoutButton setTitle:NSLocalizedString(@"Access Denied / Enter PIN", @"") forState:UIControlStateNormal];
+}
+
+- (void)pinViewControllerWillDismissAfterPinEntryWasCancelled:(THPinViewController *)pinViewController
+{
+    if (! self.locked) {
+        [self logout:self];
+    }
+}
+- (void)logout:(id)sender
+{
+    self.locked = YES;
+    [self.loginLogoutButton setTitle:NSLocalizedString(@"Enter PIN", @"") forState:UIControlStateNormal];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
