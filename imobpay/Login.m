@@ -22,9 +22,20 @@
 
 @implementation Login
 static const NSUInteger THNumberOfPinEntries = 6;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification)
+                                                 name:@"TestNotification"
+                                               object:nil];
     // Do any additional setup after loading the view.
+}
+
+
+- (void) receiveTestNotification
+{
+    [self performSegueWithIdentifier:@"showDashboard" sender:nil];
 }
 
 #pragma mark textfield delegates
@@ -55,6 +66,7 @@ static const NSUInteger THNumberOfPinEntries = 6;
     NSString *errorText=nil;
     if (self.userField.text.length>0) {
         if (self.pwdField.text.length>0) {
+            
                 [obj callApi:LoginUrl parameters:[NSDictionary dictionaryWithObjectsAndKeys:self.userField.text,@"username",self.pwdField.text,@"password", nil] type:@"Login" currentcontroller:self];
         }else
         {

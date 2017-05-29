@@ -14,4 +14,7 @@
 #define LoginUrl            @"https://imobpay.eu/webs/login"
 #define OrderSim            @"https://imobpay.eu/webs/ordersim"
 #define ForgotPassword      @"https://imobpay.eu/webs/forgotpassword"
+#define Passcode            @"https://imobpay.eu/webs/setPin"
+#define GetBalance          @"https://imobpay.eu/webs/getbalance"
+#define TransHistory        @"https://imobpay.eu/webs/transactionhistory"
 #endif /* Constants_h */

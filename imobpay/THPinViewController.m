@@ -8,9 +8,11 @@
 
 #import "THPinViewController.h"
 #import "THPinView.h"
+#import "Constants.h"
+#import "ParseApi.h"
 //#import "UIImage+ImageEffects.h"
 
-@interface THPinViewController () <THPinViewDelegate, THPinViewControllerDelegate>
+@interface THPinViewController () <THPinViewDelegate, THPinViewControllerDelegate,UserMgrDelegate>
 
 @property (nonatomic, strong) THPinView *pinView;
 @property (nonatomic, strong) UIView *blurView;
@@ -56,7 +58,6 @@ static const NSUInteger THNumberOfPinEntries = 6;
 {
     self.locked = YES;
     [self.loginLogoutButton setTitle:NSLocalizedString(@"Enter PIN", @"") forState:UIControlStateNormal];
-    [self performSegueWithIdentifier:@"showDashboard" sender:nil];
 }
 
 #pragma mark - THPinViewControllerDelegate
@@ -101,7 +102,27 @@ static const NSUInteger THNumberOfPinEntries = 6;
 - (void)pinViewControllerWillDismissAfterPinEntryWasSuccessful:(THPinViewController *)pinViewController
 {
     self.locked = NO;
+    
+    ParseApi *obj = [[ParseApi alloc]init];
+    obj.delegate = self;
+    [obj callApi:Passcode parameters:[NSDictionary dictionaryWithObjectsAndKeys:@"123456789",@"user_id",self.correctPin,@"pin", nil] type:@"PIN" currentcontroller:self];
     [self.loginLogoutButton setTitle:NSLocalizedString(@"Logout", @"") forState:UIControlStateNormal];
+
+}
+
+-(void)response:(NSDictionary*)responseobject type:(NSString *)type
+{
+    BOOL status = [[responseobject objectForKey:@"status"] boolValue];
+    ParseApi *obj = [[ParseApi alloc]init];
+    if (status) {
+        // [obj showalert:@"You have successfully logged in." currentcontroller:self];
+        [[NSNotificationCenter defaultCenter]
+         postNotificationName:@"TestNotification"
+         object:self];    }else
+    {
+        [obj showalert:[responseobject objectForKey:@"msg"] currentcontroller:self];
+    }
+    NSLog(@"response..%@",responseobject);
 }
 
 - (void)pinViewControllerWillDismissAfterPinEntryWasUnsuccessful:(THPinViewController *)pinViewController
@@ -296,6 +317,7 @@ static const NSUInteger THNumberOfPinEntries = 6;
 - (void)correctPinWasEnteredInPinView:(THPinView *)pinView
 {
     if ([self respondsToSelector:@selector(pinViewControllerWillDismissAfterPinEntryWasSuccessful:)]) {
+
         [self pinViewControllerWillDismissAfterPinEntryWasSuccessful:self];
     }
     

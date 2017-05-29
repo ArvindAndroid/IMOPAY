@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843C2F8C1EDCAA9200F18CFB /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 843C2F8A1EDCAA9200F18CFB /* ActivityCell.m */; };
+		843C2F8D1EDCAA9200F18CFB /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843C2F8B1EDCAA9200F18CFB /* ActivityCell.xib */; };
 		844AAF911EDAC5D500572B7F /* THPinInputCirclesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF831EDAC5D500572B7F /* THPinInputCirclesView.m */; };
 		844AAF921EDAC5D500572B7F /* THPinInputCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF851EDAC5D500572B7F /* THPinInputCircleView.m */; };
 		844AAF931EDAC5D500572B7F /* THPinNumButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF871EDAC5D500572B7F /* THPinNumButton.m */; };
@@ -55,6 +57,9 @@
 /* Begin PBXFileReference section */
 		25EC697DC0A125B1008B6385 /* Pods-imobpay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imobpay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imobpay/Pods-imobpay.debug.xcconfig"; sourceTree = "<group>"; };
 		5C8D3F01A906C0CC5972102A /* Pods-imobpay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imobpay.release.xcconfig"; path = "Pods/Target Support Files/Pods-imobpay/Pods-imobpay.release.xcconfig"; sourceTree = "<group>"; };
+		843C2F891EDCAA9200F18CFB /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityCell.h; sourceTree = "<group>"; };
+		843C2F8A1EDCAA9200F18CFB /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityCell.m; sourceTree = "<group>"; };
+		843C2F8B1EDCAA9200F18CFB /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityCell.xib; sourceTree = "<group>"; };
 		844AAF821EDAC5D500572B7F /* THPinInputCirclesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinInputCirclesView.h; sourceTree = "<group>"; };
 		844AAF831EDAC5D500572B7F /* THPinInputCirclesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPinInputCirclesView.m; sourceTree = "<group>"; };
 		844AAF841EDAC5D500572B7F /* THPinInputCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPinInputCircleView.h; sourceTree = "<group>"; };
@@ -168,6 +173,9 @@
 			children = (
 				844AAF9F1EDAE5D000572B7F /* DashboardVC.h */,
 				844AAFA01EDAE5D000572B7F /* DashboardVC.m */,
+				843C2F891EDCAA9200F18CFB /* ActivityCell.h */,
+				843C2F8A1EDCAA9200F18CFB /* ActivityCell.m */,
+				843C2F8B1EDCAA9200F18CFB /* ActivityCell.xib */,
 			);
 			name = Dashboard;
 			sourceTree = "<group>";
@@ -414,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844AAF961EDAC5D500572B7F /* THPinViewController.bundle in Resources */,
+				843C2F8D1EDCAA9200F18CFB /* ActivityCell.xib in Resources */,
 				C90897F81ED8987C0080C25F /* LaunchScreen.storyboard in Resources */,
 				C90897F51ED8987C0080C25F /* Assets.xcassets in Resources */,
 				C90897F31ED8987C0080C25F /* Main.storyboard in Resources */,
@@ -503,6 +512,7 @@
 				844AAF9B1EDACBA700572B7F /* EnterPasscode.m in Sources */,
 				84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				A45A23451ED9B4A30074E6C5 /* ForgotPasswordViewController.m in Sources */,
+				843C2F8C1EDCAA9200F18CFB /* ActivityCell.m in Sources */,
 				844AAF951EDAC5D500572B7F /* THPinView.m in Sources */,
 				844AAF931EDAC5D500572B7F /* THPinNumButton.m in Sources */,
 				84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */,
