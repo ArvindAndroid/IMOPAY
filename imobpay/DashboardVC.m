@@ -141,65 +141,67 @@ UIView* setgradientView(UIView*  view,UIColor* gdUpper,UIColor* gdMiddle,UIColor
 - (NSInteger)tableView:(UITableView *)tableView
  numberOfRowsInSection:(NSInteger)section
 {
-    if (!collapsed)
-    {
-        return [self.activities count];
-    }
-    else
-    {
-        return 0;
-    }
+    return [self.activities count];
+
+//    if (!collapsed)
+//    {
+//        return [self.activities count];
+//    }
+//    else
+//    {
+//        return 0;
+//    }
 }
 
-- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0,tableView.frame.size.width,50)];
-    [self setControllerbackground];
-    setgradientView(view, gdColorupper, gdColormiddle, gdColorbottom);
-    // view.backgroundColor = [UIColor colorWithRed:58.0/255.0 green:89.0/255.0 blue:153.0/255.0 alpha:1.0];
-    //view.backgroundColor = [UIColor clearColor];
-    UIImageView *dot =[[UIImageView alloc] initWithFrame:CGRectMake(10,view.frame.size.height/2-10,20,20)];
-    
-    if (collapsed)
-    {
-        dot.image=[UIImage imageNamed:@"down"];
-        
-    }
-    else
-    {
-        dot.image=[UIImage imageNamed:@"up"];
-    }
-    
-    [view addSubview:dot];
-    
-    UILabel *locatioName = [[UILabel alloc]initWithFrame:CGRectMake(35,0,view.frame.size.width -100,50)];
-    locatioName.tag=5;
-    locatioName.textAlignment = NSTextAlignmentLeft;
-    NSString *myString = [NSString stringWithFormat:@"%@",@"Activity"];
-    locatioName.text = myString;
-    locatioName.font = [UIFont fontWithName:@"Helvetica-Semibold" size:12];
-    locatioName.backgroundColor =[UIColor clearColor];
-    locatioName.textColor =[UIColor whiteColor];
-    [view addSubview:locatioName];
-    
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height)];
-    button.tag = section;
-    button.contentHorizontalAlignment = UIViewContentModeBottomLeft;
-    button.backgroundColor= [UIColor clearColor];
-    [button addTarget:self action:@selector(filtersButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [view addSubview:button];
-    
-    UILabel *singleline = [[UILabel alloc] initWithFrame:CGRectMake(0, 48, view.frame.size.width, 1)];
-    singleline.backgroundColor = [UIColor lightGrayColor];
-    [view addSubview:singleline];
-    
-    return view;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
-    return 60;
-}
+//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+//{
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0,tableView.frame.size.width,50)];
+//    [self setControllerbackground];
+//    setgradientView(view, gdColorupper, gdColormiddle, gdColorbottom);
+//    // view.backgroundColor = [UIColor colorWithRed:58.0/255.0 green:89.0/255.0 blue:153.0/255.0 alpha:1.0];
+//    //view.backgroundColor = [UIColor clearColor];
+//    UIImageView *dot =[[UIImageView alloc] initWithFrame:CGRectMake(10,view.frame.size.height/2-10,20,20)];
+//    
+//    if (collapsed)
+//    {
+//        dot.image=[UIImage imageNamed:@"down"];
+//        
+//    }
+//    else
+//    {
+//        dot.image=[UIImage imageNamed:@"up"];
+//    }
+//    
+//    [view addSubview:dot];
+//    
+//    UILabel *locatioName = [[UILabel alloc]initWithFrame:CGRectMake(35,0,view.frame.size.width -100,50)];
+//    locatioName.tag=5;
+//    locatioName.textAlignment = NSTextAlignmentLeft;
+//    NSString *myString = [NSString stringWithFormat:@"%@",@"Activity"];
+//    locatioName.text = myString;
+//    locatioName.font = [UIFont fontWithName:@"Helvetica-Semibold" size:12];
+//    locatioName.backgroundColor =[UIColor clearColor];
+//    locatioName.textColor =[UIColor whiteColor];
+//    [view addSubview:locatioName];
+//    
+//    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y, view.frame.size.width, view.frame.size.height)];
+//    button.tag = section;
+//    button.contentHorizontalAlignment = UIViewContentModeBottomLeft;
+//    button.backgroundColor= [UIColor clearColor];
+//    [button addTarget:self action:@selector(filtersButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [view addSubview:button];
+//    
+//    UILabel *singleline = [[UILabel alloc] initWithFrame:CGRectMake(0, 48, view.frame.size.width, 1)];
+//    singleline.backgroundColor = [UIColor lightGrayColor];
+//    [view addSubview:singleline];
+//    
+//    return view;
+//}
+//
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+//{
+//    return 60;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -214,12 +216,8 @@ UIView* setgradientView(UIView*  view,UIColor* gdUpper,UIColor* gdMiddle,UIColor
     }
     cell.activityDate.text = [[self.activities objectAtIndex:indexPath.row]objectForKey:@"date"];
     cell.activityDesc.text = [[self.activities objectAtIndex:indexPath.row]objectForKey:@"description"];
-   // cell.activityTime.text = [[self.activities objectAtIndex:indexPath.row]objectForKey:@"time"];
+    cell.activityTime.text = [[self.activities objectAtIndex:indexPath.row]objectForKey:@"amount"];
 
-//    cell.textLabel.numberOfLines = 0;
-//    cell.textLabel.textColor = [UIColor darkGrayColor];
-//    cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-//    cell.textLabel.font = [UIFont systemFontOfSize:14.0f];
     return cell;
 }
 

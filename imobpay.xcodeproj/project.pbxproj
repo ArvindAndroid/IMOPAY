@@ -19,6 +19,11 @@
 		844AAF9B1EDACBA700572B7F /* EnterPasscode.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAF9A1EDACBA700572B7F /* EnterPasscode.m */; };
 		844AAF9D1EDACE0F00572B7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844AAF9C1EDACE0F00572B7F /* CoreGraphics.framework */; };
 		844AAFA11EDAE5D000572B7F /* DashboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 844AAFA01EDAE5D000572B7F /* DashboardVC.m */; };
+		844C961C1EDDE33D00C3FB7D /* ActivityDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C961B1EDDE33C00C3FB7D /* ActivityDetail.m */; };
+		844C96201EDDE37200C3FB7D /* CAPSPageMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C961E1EDDE37200C3FB7D /* CAPSPageMenu.m */; };
+		844C96231EDDE3AD00C3FB7D /* loadActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C96221EDDE3AD00C3FB7D /* loadActivity.m */; };
+		844C96271EDDE3E900C3FB7D /* EachActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 844C96251EDDE3E900C3FB7D /* EachActivityCell.m */; };
+		844C96281EDDE3E900C3FB7D /* EachActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844C96261EDDE3E900C3FB7D /* EachActivityCell.xib */; };
 		84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04CE1ED89F82007B46E6 /* ParseApi.m */; };
 		84FE04D41ED8A012007B46E6 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D31ED8A012007B46E6 /* Login.m */; };
 		84FE04D71ED8A021007B46E6 /* Signup.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FE04D61ED8A021007B46E6 /* Signup.m */; };
@@ -78,6 +83,15 @@
 		844AAF9C1EDACE0F00572B7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		844AAF9F1EDAE5D000572B7F /* DashboardVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardVC.h; sourceTree = "<group>"; };
 		844AAFA01EDAE5D000572B7F /* DashboardVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardVC.m; sourceTree = "<group>"; };
+		844C961A1EDDE33C00C3FB7D /* ActivityDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetail.h; sourceTree = "<group>"; };
+		844C961B1EDDE33C00C3FB7D /* ActivityDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetail.m; sourceTree = "<group>"; };
+		844C961E1EDDE37200C3FB7D /* CAPSPageMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAPSPageMenu.m; sourceTree = "<group>"; };
+		844C961F1EDDE37200C3FB7D /* CAPSPageMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAPSPageMenu.h; sourceTree = "<group>"; };
+		844C96211EDDE3AD00C3FB7D /* loadActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = loadActivity.h; sourceTree = "<group>"; };
+		844C96221EDDE3AD00C3FB7D /* loadActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loadActivity.m; sourceTree = "<group>"; };
+		844C96241EDDE3E900C3FB7D /* EachActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EachActivityCell.h; sourceTree = "<group>"; };
+		844C96251EDDE3E900C3FB7D /* EachActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EachActivityCell.m; sourceTree = "<group>"; };
+		844C96261EDDE3E900C3FB7D /* EachActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EachActivityCell.xib; sourceTree = "<group>"; };
 		84FE04CD1ED89F82007B46E6 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		84FE04CE1ED89F82007B46E6 /* ParseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseApi.m; sourceTree = "<group>"; };
 		84FE04CF1ED89F82007B46E6 /* ParseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseApi.h; sourceTree = "<group>"; };
@@ -180,6 +194,22 @@
 			name = Dashboard;
 			sourceTree = "<group>";
 		};
+		844C961D1EDDE35900C3FB7D /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				844C961E1EDDE37200C3FB7D /* CAPSPageMenu.m */,
+				844C961F1EDDE37200C3FB7D /* CAPSPageMenu.h */,
+				844C96211EDDE3AD00C3FB7D /* loadActivity.h */,
+				844C96221EDDE3AD00C3FB7D /* loadActivity.m */,
+				844C961A1EDDE33C00C3FB7D /* ActivityDetail.h */,
+				844C961B1EDDE33C00C3FB7D /* ActivityDetail.m */,
+				844C96241EDDE3E900C3FB7D /* EachActivityCell.h */,
+				844C96251EDDE3E900C3FB7D /* EachActivityCell.m */,
+				844C96261EDDE3E900C3FB7D /* EachActivityCell.xib */,
+			);
+			name = PageMenu;
+			sourceTree = "<group>";
+		};
 		84FE04CC1ED89F40007B46E6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +296,7 @@
 		C90897E71ED8987B0080C25F /* imobpay */ = {
 			isa = PBXGroup;
 			children = (
+				844C961D1EDDE35900C3FB7D /* PageMenu */,
 				844AAF9E1EDAE5B900572B7F /* Dashboard */,
 				844AAF811EDAC5C500572B7F /* Passcode */,
 				A45A23461ED9C2260074E6C5 /* SimOrder */,
@@ -422,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844AAF961EDAC5D500572B7F /* THPinViewController.bundle in Resources */,
+				844C96281EDDE3E900C3FB7D /* EachActivityCell.xib in Resources */,
 				843C2F8D1EDCAA9200F18CFB /* ActivityCell.xib in Resources */,
 				C90897F81ED8987C0080C25F /* LaunchScreen.storyboard in Resources */,
 				C90897F51ED8987C0080C25F /* Assets.xcassets in Resources */,
@@ -499,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FE04DD1ED8AAB7007B46E6 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				844C96271EDDE3E900C3FB7D /* EachActivityCell.m in Sources */,
 				844AAF921EDAC5D500572B7F /* THPinInputCircleView.m in Sources */,
 				844AAF971EDAC5D500572B7F /* THPinViewController.m in Sources */,
 				A45A23491ED9C24F0074E6C5 /* SimOrderViewController.m in Sources */,
@@ -509,14 +542,17 @@
 				C90897F01ED8987B0080C25F /* ViewController.m in Sources */,
 				844AAF941EDAC5D500572B7F /* THPinNumPadView.m in Sources */,
 				C90897ED1ED8987B0080C25F /* AppDelegate.m in Sources */,
+				844C961C1EDDE33D00C3FB7D /* ActivityDetail.m in Sources */,
 				844AAF9B1EDACBA700572B7F /* EnterPasscode.m in Sources */,
 				84FE04DE1ED8AAB7007B46E6 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				A45A23451ED9B4A30074E6C5 /* ForgotPasswordViewController.m in Sources */,
 				843C2F8C1EDCAA9200F18CFB /* ActivityCell.m in Sources */,
 				844AAF951EDAC5D500572B7F /* THPinView.m in Sources */,
 				844AAF931EDAC5D500572B7F /* THPinNumButton.m in Sources */,
+				844C96231EDDE3AD00C3FB7D /* loadActivity.m in Sources */,
 				84FE04D01ED89F82007B46E6 /* ParseApi.m in Sources */,
 				C90897EA1ED8987B0080C25F /* main.m in Sources */,
+				844C96201EDDE37200C3FB7D /* CAPSPageMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

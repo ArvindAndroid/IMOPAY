@@ -12,58 +12,72 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCell" id="KGk-i7-Jjw" customClass="ActivityCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUP-ne-rGw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tx-Hd-ae5">
-                                <rect key="frame" x="8" y="4" width="304" height="21"/>
+                                <rect key="frame" x="8" y="7" width="304" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="hn6-Gs-EUT"/>
+                                    <constraint firstAttribute="height" constant="21" id="4Sq-yQ-Chl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZ4-Mr-vu6">
-                                <rect key="frame" x="56" y="26" width="246" height="29"/>
+                                <rect key="frame" x="47" y="30" width="183" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="nff-iS-Hwn"/>
+                                    <constraint firstAttribute="height" constant="21" id="LsN-dI-d17"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" white="0.0" alpha="0.87607020547945202" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9k-Pb-wwT">
+                                <rect key="frame" x="238" y="49" width="69" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="eIq-5j-CaQ"/>
+                                    <constraint firstAttribute="width" constant="69" id="uJq-TF-bqB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
-                                <color key="textColor" white="0.0" alpha="0.87607020547945202" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="LZ4-Mr-vu6" secondAttribute="trailing" constant="18" id="26p-Cg-uJd"/>
-                            <constraint firstItem="4Tx-Hd-ae5" firstAttribute="leading" secondItem="SUP-ne-rGw" secondAttribute="leading" constant="8" id="LZp-QX-z19"/>
-                            <constraint firstAttribute="bottom" secondItem="LZ4-Mr-vu6" secondAttribute="bottom" constant="4" id="TQJ-tr-vub"/>
-                            <constraint firstItem="4Tx-Hd-ae5" firstAttribute="top" secondItem="SUP-ne-rGw" secondAttribute="top" constant="4" id="Wkg-X1-vHH"/>
-                            <constraint firstAttribute="trailing" secondItem="4Tx-Hd-ae5" secondAttribute="trailing" constant="8" id="Y50-aP-4Jf"/>
-                            <constraint firstItem="LZ4-Mr-vu6" firstAttribute="leading" secondItem="SUP-ne-rGw" secondAttribute="leading" constant="56" id="ZHG-0S-RHl"/>
-                            <constraint firstItem="LZ4-Mr-vu6" firstAttribute="top" secondItem="4Tx-Hd-ae5" secondAttribute="bottom" constant="1" id="hR7-qd-yMg"/>
-                            <constraint firstItem="LZ4-Mr-vu6" firstAttribute="top" secondItem="4Tx-Hd-ae5" secondAttribute="bottom" constant="1" id="rRv-ZO-y17"/>
+                            <constraint firstAttribute="trailing" secondItem="LZ4-Mr-vu6" secondAttribute="trailing" constant="90" id="4xr-uu-3rx"/>
+                            <constraint firstItem="z9k-Pb-wwT" firstAttribute="top" secondItem="4Tx-Hd-ae5" secondAttribute="bottom" constant="21" id="D06-oY-aOG"/>
+                            <constraint firstItem="LZ4-Mr-vu6" firstAttribute="leading" secondItem="SUP-ne-rGw" secondAttribute="leading" constant="47" id="LdP-6e-a1P"/>
+                            <constraint firstItem="LZ4-Mr-vu6" firstAttribute="top" secondItem="4Tx-Hd-ae5" secondAttribute="bottom" constant="2" id="UKA-1H-5K9"/>
+                            <constraint firstAttribute="trailing" secondItem="4Tx-Hd-ae5" secondAttribute="trailing" constant="8" id="dcD-0P-Vjh"/>
+                            <constraint firstItem="4Tx-Hd-ae5" firstAttribute="leading" secondItem="SUP-ne-rGw" secondAttribute="leading" constant="8" id="gsC-0p-akK"/>
+                            <constraint firstAttribute="bottom" secondItem="z9k-Pb-wwT" secondAttribute="bottom" constant="7" id="jA9-iH-467"/>
+                            <constraint firstAttribute="trailing" secondItem="z9k-Pb-wwT" secondAttribute="trailing" constant="13" id="xGb-Bv-8O8"/>
+                            <constraint firstItem="4Tx-Hd-ae5" firstAttribute="top" secondItem="SUP-ne-rGw" secondAttribute="top" constant="7" id="xrG-9B-qcf"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="SUP-ne-rGw" secondAttribute="trailing" id="2AU-NX-g90"/>
-                    <constraint firstItem="SUP-ne-rGw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3VT-hk-9jv"/>
-                    <constraint firstItem="SUP-ne-rGw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="OmB-6i-aAI"/>
-                    <constraint firstAttribute="bottom" secondItem="SUP-ne-rGw" secondAttribute="bottom" id="nHm-rg-dgi"/>
+                    <constraint firstItem="SUP-ne-rGw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3DC-vy-byv"/>
+                    <constraint firstAttribute="bottom" secondItem="SUP-ne-rGw" secondAttribute="bottom" id="VLq-nV-HeL"/>
+                    <constraint firstAttribute="trailing" secondItem="SUP-ne-rGw" secondAttribute="trailing" id="ZE3-MV-Jbf"/>
+                    <constraint firstItem="SUP-ne-rGw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="w2w-oD-EOd"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="activityDate" destination="4Tx-Hd-ae5" id="HWw-8r-hNj"/>
                 <outlet property="activityDesc" destination="LZ4-Mr-vu6" id="e6H-pg-nIQ"/>
+                <outlet property="activityTime" destination="z9k-Pb-wwT" id="KDw-NF-UG6"/>
             </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
         </tableViewCell>
     </objects>
 </document>
